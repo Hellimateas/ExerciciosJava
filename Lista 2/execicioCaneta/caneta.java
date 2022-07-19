@@ -7,6 +7,12 @@ public class caneta {
   private String cor;
   private int tamanho;
   
+  public caneta(String marca, String cor, int tamanho) {
+	  this.marca = marca;
+	  this.cor = cor;
+	  this.tamanho = tamanho;
+  }
+  
   public String getCor() {
     return cor;
   }
@@ -33,7 +39,7 @@ public class caneta {
   
   @Override
   public String toString() {
-    return super.toString();
+    return "cor: " + cor + "\ntamanho: " + tamanho+ "\nMarca: " + marca;
   }
 
   
